@@ -6,13 +6,5 @@
   color: $salmon;
   font-size: 6vh;
   padding: 0 1vh 1vh calc(15px + 3vw);
-}
-
-.main-header a {
-  padding-left: calc(15px + 3vw);
-  width: auto;
-}
-
-.main-header a:hover {
-  opacity: 0.5;
+  font-weight: lighter;
 }
