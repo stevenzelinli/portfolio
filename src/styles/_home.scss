@@ -12,6 +12,10 @@
   color: dimgrey;
 }
 
+.row {
+  padding-top: 20px;
+}
+
 .anchors {
   background-color: $light-grey;
   padding-top: 75px;
@@ -24,12 +28,26 @@
 }
 
 .anchors h4 {
+  font-family: $content-font-family;
   color: rgba(17,19,17,0.76);
   padding-top: 5px;
 }
 
+.anchors h3 {
+  font-family: $content-font-family;
+  color: rgba(17,19,17,0.76);
+}
+
 .anchors p {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: $content-font-family;
+}
+
+.anchors a {
+  color: rgba(17,19,17,0.76);
+  font-family: $content-font-family;
+  background: transparent;
+  padding-left: 4px;
+  border-right: .5em solid $salmon;
 }
 
 #part1 {

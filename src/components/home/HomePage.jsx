@@ -107,7 +107,7 @@ const HomePage = () => (
             <Tab.Container id="left-exp-tabs" defaultActiveKey="first">
                 <Row>
                     <Col sm={3}>
-                        <Nav variant="pills" className="flex-column">
+                        <Nav className="flex-column">
                             <Nav.Item>
                                 <Nav.Link eventKey="first">Autodata</Nav.Link>
                             </Nav.Item>
@@ -119,10 +119,12 @@ const HomePage = () => (
                     <Col sm={9}>
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
-                                Nice
+                                <h3>Software Developer</h3>
+                                <h5>May 2018 - August 2019</h5>
                             </Tab.Pane>
                             <Tab.Pane eventKey="second">
-                                Nice Nice
+                                <h3>Building Automation Technologist</h3>
+                                <h4>2015 - 2017 (Summer)</h4>
                             </Tab.Pane>
                         </Tab.Content>
                     </Col>
