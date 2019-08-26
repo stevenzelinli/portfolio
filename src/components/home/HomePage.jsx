@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
-import { Col, Container, Jumbotron, Nav, Row, Tab, } from 'react-bootstrap';
+import { Col, Container, Jumbotron, Row, } from 'react-bootstrap';
 import '../../styles/_home.scss';
 
 const HomePage = () => (
@@ -104,32 +104,54 @@ const HomePage = () => (
         </Jumbotron>
         <Jumbotron className="anchors" id="experience">
             <h1>Experience</h1>
-            <Tab.Container id="left-exp-tabs" defaultActiveKey="first">
+            <Container>
                 <Row>
-                    <Col sm={3}>
-                        <Nav className="flex-column">
-                            <Nav.Item>
-                                <Nav.Link eventKey="first">Autodata</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="second">Mircom</Nav.Link>
-                            </Nav.Item>
-                        </Nav>
+                    <Col xs={12} md={6}>
+                        <div id="autodata">
+                            <div className="card-top">
+                                <h3>Software Developer (Internship)</h3>
+                                <h4>Autodata Solutions</h4>
+                                <h4>May 2018 - August 2019</h4>
+                            </div>
+                            <p>
+                                * Worked on new features and modifications to existing code for multiple Spring based web services
+                                dealing with car manufacturer data and resolved production bugs and inquiries around those services
+                            </p>
+                            <p>
+                                * Created Docker containers to use in order to deploy to production a cluster of
+                                <a href="https://lucene.apache.org/solr/"> Apache Solr </a>
+                                servers setup with CDCR and automatic load balancing
+                            </p>
+                            <p>
+                                * Planned and developed an internal service application used by our department to manage
+                                resourcing needs using ReactJS and Spring Boot and additionally setup CI/CD on said application
+                                which included automatic test pipelines, container creation, and deployment to a kubernetes cluster
+                            </p>
+                        </div>
                     </Col>
-                    <Col sm={9}>
-                        <Tab.Content>
-                            <Tab.Pane eventKey="first">
-                                <h3>Software Developer</h3>
-                                <h5>May 2018 - August 2019</h5>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="second">
-                                <h3>Building Automation Technologist</h3>
-                                <h4>2015 - 2017 (Summer)</h4>
-                            </Tab.Pane>
-                        </Tab.Content>
+                    <Col cs={12} md={6}>
+                        <div id="mircom">
+                            <div className="card-top">
+                                <h3>Building Automation Technologist (Summer)</h3>
+                                <h4>Mircom</h4>
+                                <h4>June 2015 - August 2017</h4>
+                            </div>
+                            <p>
+                                * Setup and maintained HVAC Building Automation Systems (BAS) for many locations in the GTA
+                                including several schools and malls such as Fairview Mall and Brampton's Bramalea City Centre
+                            </p>
+                            <p>
+                                * Debugged and wrote code in C and custom vendor code for BAS systems which involved
+                                temperature control and chronological jobs
+                            </p>
+                            <p>
+                                * Physically visited many sites which required me to go and verify whether a system was setup
+                                properly or not by checking code and physically going to sensors and fans to double check
+                            </p>
+                        </div>
                     </Col>
                 </Row>
-            </Tab.Container>
+            </Container>
         </Jumbotron>
         <Jumbotron className="anchors" id="projects">
             <h1>Projects</h1>

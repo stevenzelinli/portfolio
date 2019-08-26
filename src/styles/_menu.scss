@@ -4,11 +4,10 @@ $colDefault     : #ecf0f1;
 $colHighlight   : #ffbbbc;
 $dropDown       : false;
 .navbar {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border: none;
-  width: 100%;
   margin: 0;
-  top: 0;
   -webkit-transition: all 4s;
   background-color: $bgDefault;
   .navbar-brand {
