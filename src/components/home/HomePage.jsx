@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
-import { Col, Container, Jumbotron, Row, } from 'react-bootstrap';
+import { Button, Col, Container, Form, Jumbotron, Row, } from 'react-bootstrap';
 import '../../styles/_home.scss';
 
 const HomePage = () => (
@@ -42,74 +42,74 @@ const HomePage = () => (
                     <Col xs={12} md={6}>
                         <h4>Java</h4>
                         <div className="skill-container">
-                            <div className="skills java">90%</div>
+                            <div className="skills java">5 Years</div>
                         </div>
                     </Col>
                     <Col xs={12} md={6}>
                         <h4>Spring Framework</h4>
                         <div className="skill-container">
-                            <div className="skills spring">90%</div>
+                            <div className="skills spring">4 Years</div>
                         </div>
                     </Col>
                     <Col xs={12} md={6}>
                         <h4>Docker + Kubernetes</h4>
                         <div className="skill-container">
-                            <div className="skills docker">85%</div>
+                            <div className="skills docker">2.5 Years</div>
                         </div>
                     </Col>
                     <Col xs={12} md={6}>
                         <h4>ReactJS</h4>
                         <div className="skill-container">
-                            <div className="skills react">80%</div>
+                            <div className="skills react">2.5 Years</div>
                         </div>
                     </Col>
                     <Col xs={12} md={6}>
                         <h4>Google Analytics</h4>
                         <div className="skill-container">
-                            <div className="skills google">70%</div>
+                            <div className="skills google">1 Year</div>
                         </div>
                     </Col>
                     <Col xs={12} md={6}>
                         <h4>CSS + HTML5</h4>
                         <div className="skill-container">
-                            <div className="skills css">80%</div>
+                            <div className="skills css">3 Years</div>
                         </div>
                     </Col>
                     <Col xs={12} md={6}>
                         <h4>Gitlab CI</h4>
                         <div className="skill-container">
-                            <div className="skills gci">80%</div>
+                            <div className="skills gci">2 Years</div>
                         </div>
                     </Col>
                     <Col xs={12} md={6}>
                         <h4>SQL</h4>
                         <div className="skill-container">
-                            <div className="skills sql">75%</div>
+                            <div className="skills sql">2.5 Years</div>
                         </div>
                     </Col>
                     <Col xs={12} md={6}>
                         <h4>Jenkins</h4>
                         <div className="skill-container">
-                            <div className="skills jenkins">70%</div>
+                            <div className="skills jenkins">1 Year</div>
                         </div>
                     </Col>
                     <Col xs={12} md={6}>
                         <h4>Python</h4>
                         <div className="skill-container">
-                            <div className="skills python">70%</div>
+                            <div className="skills python">1 Year</div>
                         </div>
                     </Col>
                 </Row>
             </Container>
         </Jumbotron>
-        <Jumbotron className="anchors" id="experience">
+        <Jumbotron className="anchors cards" id="experience">
             <h1>Experience</h1>
             <Container>
                 <Row>
                     <Col xs={12} md={6}>
                         <div id="autodata">
                             <div className="card-top">
-                                <h3>Software Developer (Internship)</h3>
+                                <h3>Software Developer</h3>
                                 <h4>Autodata Solutions</h4>
                                 <h4>May 2018 - August 2019</h4>
                             </div>
@@ -129,10 +129,10 @@ const HomePage = () => (
                             </p>
                         </div>
                     </Col>
-                    <Col cs={12} md={6}>
+                    <Col xs={12} md={6}>
                         <div id="mircom">
                             <div className="card-top">
-                                <h3>Building Automation Technologist (Summer)</h3>
+                                <h3>Building Automation Technologist</h3>
                                 <h4>Mircom</h4>
                                 <h4>June 2015 - August 2017</h4>
                             </div>
@@ -145,7 +145,7 @@ const HomePage = () => (
                                 temperature control and chronological jobs
                             </p>
                             <p>
-                                * Physically visited many sites which required me to go and verify whether a system was setup
+                                * Visited many sites which required me to go and verify whether a system was setup
                                 properly or not by checking code and physically going to sensors and fans to double check
                             </p>
                         </div>
@@ -153,73 +153,89 @@ const HomePage = () => (
                 </Row>
             </Container>
         </Jumbotron>
-        <Jumbotron className="anchors" id="projects">
+        <Jumbotron className="anchors cards" id="projects">
             <h1>Projects</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin turpis mauris, tristique eget sagittis et, egestas sit amet dolor.
-                Vivamus dictum varius sem, eget faucibus libero rutrum nec. Aenean lobortis ex ipsum, sit amet posuere turpis aliquam quis. Cras in
-                tellus aliquam, ullamcorper nibh feugiat, vestibulum lacus. Morbi tempor lorem libero, et venenatis lectus mollis ac. Suspendisse
-                vitae dui sit amet mauris finibus congue. Sed elementum nibh rhoncus, placerat metus nec, volutpat justo. Etiam at erat eget nibh
-                fermentum dignissim a nec massa. Suspendisse auctor ante id scelerisque suscipit. Aliquam in tincidunt sem. Sed efficitur congue
-                egestas.
-
-                Praesent mattis mollis nisl, a aliquet lorem vehicula nec. Integer velit risus, interdum sit amet lobortis non, lacinia vel ante.
-                Vestibulum eu urna sem. Quisque interdum odio sapien, vitae eleifend ex auctor mollis. Nullam at elit ac diam ultrices placerat non
-                eget justo. Vivamus malesuada risus nec ex aliquet, ac aliquet erat cursus. Suspendisse tincidunt sodales lorem vitae ultricies. Sed
-                et commodo diam, sed ullamcorper odio. Donec posuere porttitor justo nec consequat. Vestibulum rutrum blandit sem vitae vestibulum.
-                Curabitur dignissim pellentesque ex a viverra.
-
-                Cras diam nibh, eleifend sit amet feugiat in, imperdiet sed enim. Donec vitae lorem in odio facilisis aliquam. Orci varius natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut sed bibendum odio. Integer pulvinar vitae enim a venenatis. Nam
-                bibendum fermentum congue. Mauris at ligula justo. Mauris ex felis, consectetur at mauris pretium, accumsan facilisis eros. Vestibulum
-                tempus gravida libero. Etiam ac volutpat enim, maximus posuere nulla. Vivamus ac enim iaculis, euismod est at, scelerisque turpis.
-                Nullam sodales ac est in dignissim. Nullam eu rutrum nisl. Duis et lorem ante.
-
-                Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam eget condimentum dui. Nullam facilisis lacus fermentum, semper
-                enim in, convallis est. Nulla varius justo sed libero venenatis, nec molestie nisi semper. Proin in rutrum ante, vitae interdum nulla.
-                Phasellus nunc metus, tincidunt in orci in, fermentum finibus ligula. Sed porttitor, diam ut ultrices porta, tellus nulla tincidunt
-                elit, ac varius mi eros a nunc. Vestibulum placerat vel nulla in vestibulum. Curabitur scelerisque efficitur lacinia. Curabitur dictum
-                odio at neque sollicitudin, a ultricies lectus feugiat.
-
-                Maecenas turpis risus, varius eu laoreet sit amet, varius ac tellus. Sed hendrerit id tellus a varius. Nullam a orci id metus mattis
-                porttitor quis at urna. Sed eu mollis lectus. Curabitur hendrerit metus metus, nec ornare ante pharetra vitae. Fusce hendrerit urna ut
-                iaculis luctus. Mauris at varius ex. In et dolor orci. Sed mollis, augue non luctus egestas, augue libero tincidunt enim, in molestie
-                ante turpis eget justo. Aliquam efficitur quam nec ex lacinia, non commodo orci mollis.
-            </p>
+            <Container>
+                <Row>
+                    <Col xs={12} md={6}>
+                        <div id="project">
+                            <div className="card-top">
+                                <a href="https://compare.autodatadirect.com/kia/ca/vehicle/#/select/primary/compare"><h3>KIA Compare</h3></a>
+                                <h4>ReactJS * Google Analytics * Java * Spring</h4>
+                            </div>
+                            <p>
+                                While working at Autodata, I maintained and worked on new features for an embeddable UI widget which processes vehicle
+                                VINs and compares them with common competitor vehicles in order to show vendor specific advantages and differences.
+                            </p>
+                        </div>
+                    </Col>
+                    <Col xs={12} md={6}>
+                        <div id="project">
+                            <div className="card-top">
+                                <h3>Marcotte Physiotherapy</h3>
+                                <h4>EmberJS * NodeJS * Express * Semantic UI</h4>
+                            </div>
+                            <p>
+                                Designed and developed a website for a physiotherapist based in London, ON that would facilitate appointment booking,
+                                payment processing, and exercise videos.
+                            </p>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={12} md={6}>
+                        <div id="project">
+                            <div className="card-top">
+                                <a href="https://github.com/stevenzelinli/linkhub"><h3>Linkhub</h3></a>
+                                <h4>Java * Swing</h4>
+                            </div>
+                            <p>
+                                Created a desktop messaging application that allowed for online chat rooms that would self destruct after the last
+                                person leaves the chat leaving no trace of the conversation.
+                            </p>
+                        </div>
+                    </Col>
+                    <Col xs={12} md={6}>
+                        <div id="project">
+                            <div className="card-top">
+                                <a href="https://github.com/stevenzelinli/portfolio"><h3>Portfolio Website</h3></a>
+                                <h4>HTML * CSS * ReactJS</h4>
+                            </div>
+                            <p>
+                                Designed and created a website that would showcase my projects and demonstrate my ability in the front-end.
+                            </p>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </Jumbotron>
         <Jumbotron className="anchors" id="contact">
             <h1>Contact</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin turpis mauris, tristique eget sagittis et, egestas sit amet dolor.
-                Vivamus dictum varius sem, eget faucibus libero rutrum nec. Aenean lobortis ex ipsum, sit amet posuere turpis aliquam quis. Cras in
-                tellus aliquam, ullamcorper nibh feugiat, vestibulum lacus. Morbi tempor lorem libero, et venenatis lectus mollis ac. Suspendisse
-                vitae dui sit amet mauris finibus congue. Sed elementum nibh rhoncus, placerat metus nec, volutpat justo. Etiam at erat eget nibh
-                fermentum dignissim a nec massa. Suspendisse auctor ante id scelerisque suscipit. Aliquam in tincidunt sem. Sed efficitur congue
-                egestas.
-
-                Praesent mattis mollis nisl, a aliquet lorem vehicula nec. Integer velit risus, interdum sit amet lobortis non, lacinia vel ante.
-                Vestibulum eu urna sem. Quisque interdum odio sapien, vitae eleifend ex auctor mollis. Nullam at elit ac diam ultrices placerat non
-                eget justo. Vivamus malesuada risus nec ex aliquet, ac aliquet erat cursus. Suspendisse tincidunt sodales lorem vitae ultricies. Sed
-                et commodo diam, sed ullamcorper odio. Donec posuere porttitor justo nec consequat. Vestibulum rutrum blandit sem vitae vestibulum.
-                Curabitur dignissim pellentesque ex a viverra.
-
-                Cras diam nibh, eleifend sit amet feugiat in, imperdiet sed enim. Donec vitae lorem in odio facilisis aliquam. Orci varius natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut sed bibendum odio. Integer pulvinar vitae enim a venenatis. Nam
-                bibendum fermentum congue. Mauris at ligula justo. Mauris ex felis, consectetur at mauris pretium, accumsan facilisis eros. Vestibulum
-                tempus gravida libero. Etiam ac volutpat enim, maximus posuere nulla. Vivamus ac enim iaculis, euismod est at, scelerisque turpis.
-                Nullam sodales ac est in dignissim. Nullam eu rutrum nisl. Duis et lorem ante.
-
-                Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam eget condimentum dui. Nullam facilisis lacus fermentum, semper
-                enim in, convallis est. Nulla varius justo sed libero venenatis, nec molestie nisi semper. Proin in rutrum ante, vitae interdum nulla.
-                Phasellus nunc metus, tincidunt in orci in, fermentum finibus ligula. Sed porttitor, diam ut ultrices porta, tellus nulla tincidunt
-                elit, ac varius mi eros a nunc. Vestibulum placerat vel nulla in vestibulum. Curabitur scelerisque efficitur lacinia. Curabitur dictum
-                odio at neque sollicitudin, a ultricies lectus feugiat.
-
-                Maecenas turpis risus, varius eu laoreet sit amet, varius ac tellus. Sed hendrerit id tellus a varius. Nullam a orci id metus mattis
-                porttitor quis at urna. Sed eu mollis lectus. Curabitur hendrerit metus metus, nec ornare ante pharetra vitae. Fusce hendrerit urna ut
-                iaculis luctus. Mauris at varius ex. In et dolor orci. Sed mollis, augue non luctus egestas, augue libero tincidunt enim, in molestie
-                ante turpis eget justo. Aliquam efficitur quam nec ex lacinia, non commodo orci mollis.
-            </p>
+            <p><i>I will respond within 24h</i></p>
+            <Form action="https://formspree.io/steven.zelin.li@gmail.com" method="POST">
+                <Container>
+                    <Row>
+                        <Col xs={12} md={8}>
+                            <Form.Group controlId="formBasicName">
+                                <Form.Label>Name</Form.Label>
+                                <Form.Control type="text" placeholder="Name" name="name" />
+                            </Form.Group>
+                        </Col>
+                        <Col xs={12} md={8}>
+                            <Form.Group controlId="formBasicEmail">
+                                <Form.Label>Email address</Form.Label>
+                                <Form.Control type="email" placeholder="Enter email" name="_replyto" />
+                                <Form.Text className="text-muted">
+                                    I will never share your email with anyone else.
+                                </Form.Text>
+                            </Form.Group>
+                        </Col>
+                    </Row>
+                </Container>
+                <Button variant="warning" type="submit">
+                    Notify Me
+                </Button>
+            </Form>
         </Jumbotron>
     </div>
 );
