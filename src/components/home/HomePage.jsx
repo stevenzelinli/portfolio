@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import { Button, Col, Container, Form, Jumbotron, Row, } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShareSquare } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/_home.scss';
 
 const HomePage = () => (
@@ -160,7 +162,12 @@ const HomePage = () => (
                     <Col xs={12} md={6}>
                         <div id="project">
                             <div className="card-top">
-                                <a href="https://compare.autodatadirect.com/kia/ca/vehicle/#/select/primary/compare"><h3>KIA Compare</h3></a>
+                                <span>
+                                    <h3>KIA Compare</h3>
+                                <a href="https://compare.autodatadirect.com/kia/ca/vehicle/#/select/primary/compare">
+                                    <FontAwesomeIcon icon={faShareSquare} color="rgba(17, 19, 17, 0.76)" size="lg" />
+                                </a>
+                                </span>
                                 <h4>ReactJS * Google Analytics * Java * Spring</h4>
                             </div>
                             <p>
@@ -186,7 +193,12 @@ const HomePage = () => (
                     <Col xs={12} md={6}>
                         <div id="project">
                             <div className="card-top">
-                                <a href="https://github.com/stevenzelinli/linkhub"><h3>Linkhub</h3></a>
+                                <span>
+                                    <h3>Linkhub</h3>
+                                    <a href="https://github.com/stevenzelinli/linkhub">
+                                        <FontAwesomeIcon icon={faShareSquare} color="rgba(17, 19, 17, 0.76)" size="lg" />
+                                    </a>
+                                </span>
                                 <h4>Java * Swing</h4>
                             </div>
                             <p>
@@ -198,7 +210,12 @@ const HomePage = () => (
                     <Col xs={12} md={6}>
                         <div id="project">
                             <div className="card-top">
-                                <a href="https://github.com/stevenzelinli/portfolio"><h3>Portfolio Website</h3></a>
+                                <span>
+                                    <h3>Portfolio Website</h3>
+                                    <a href="https://github.com/stevenzelinli/portfolio">
+                                        <FontAwesomeIcon icon={faShareSquare} color="rgba(17, 19, 17, 0.76)" size="lg" />
+                                    </a>
+                                </span>
                                 <h4>HTML * CSS * ReactJS</h4>
                             </div>
                             <p>
