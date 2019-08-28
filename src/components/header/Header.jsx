@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../styles/_header.scss';
 
 const Header = () => (
-    <div>
-        <h1>Header</h1>
+    <div className="main-header">
+        STEVEN LI
     </div>
 );
 

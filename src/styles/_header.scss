@@ -1,0 +1,10 @@
+@import "variables";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.main-header {
+  background-color: $light-grey;
+  color: $salmon;
+  font-size: 6vh;
+  padding: 0 1vh 1vh calc(15px + 3vw);
+  font-weight: lighter;
+}
