@@ -4,4 +4,4 @@ node_js:
 branches:
   only:
     - master
-    - develop
+script: yarn predeploy && yarn deploy
