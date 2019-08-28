@@ -3,7 +3,61 @@ import React from 'react';
 import { Button, Col, Container, Form, Jumbotron, Row, } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShareSquare } from '@fortawesome/free-solid-svg-icons';
+import Skills  from './Skills';
 import '../../styles/_home.scss';
+
+const skillsData = [
+    {
+        name: "Java",
+        description: "4 Years",
+        styleName: "java",
+    },
+    {
+        name: "Spring Framework",
+        description: "2 Years",
+        styleName: "spring",
+    },
+    {
+        name: "Docker + Kubernetes",
+        description: "2 Years",
+        styleName: "docker",
+    },
+    {
+        name: "ReactJS",
+        description: "2 Years",
+        styleName: "react",
+    },
+    {
+        name: "Google Analytics",
+        description: "1 Year",
+        styleName: "google",
+    },
+    {
+        name: "CSS + HTML5",
+        description: "3 Years",
+        styleName: "css",
+    },
+    {
+        name: "Gitlab CI",
+        description: "1.5 Years",
+        styleName: "gci",
+    },
+    {
+        name: "SQL",
+        description: "3 Years",
+        styleName: "sql",
+    },
+    {
+        name: "Jenkins",
+        description: "1 Year",
+        styleName: "jenkins",
+    },
+    {
+        name: "Python",
+        description: "1 Year",
+        styleName: "python",
+    },
+];
 
 const HomePage = () => (
     <div className="home-content">
@@ -39,70 +93,7 @@ const HomePage = () => (
         </Jumbotron>
         <Jumbotron className="anchors" id="skills">
             <h1>Skills</h1>
-            <Container>
-                <Row>
-                    <Col xs={12} md={6}>
-                        <h4>Java</h4>
-                        <div className="skill-container">
-                            <div className="skills java">5 Years</div>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6}>
-                        <h4>Spring Framework</h4>
-                        <div className="skill-container">
-                            <div className="skills spring">4 Years</div>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6}>
-                        <h4>Docker + Kubernetes</h4>
-                        <div className="skill-container">
-                            <div className="skills docker">2.5 Years</div>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6}>
-                        <h4>ReactJS</h4>
-                        <div className="skill-container">
-                            <div className="skills react">2.5 Years</div>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6}>
-                        <h4>Google Analytics</h4>
-                        <div className="skill-container">
-                            <div className="skills google">1 Year</div>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6}>
-                        <h4>CSS + HTML5</h4>
-                        <div className="skill-container">
-                            <div className="skills css">3 Years</div>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6}>
-                        <h4>Gitlab CI</h4>
-                        <div className="skill-container">
-                            <div className="skills gci">2 Years</div>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6}>
-                        <h4>SQL</h4>
-                        <div className="skill-container">
-                            <div className="skills sql">2.5 Years</div>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6}>
-                        <h4>Jenkins</h4>
-                        <div className="skill-container">
-                            <div className="skills jenkins">1 Year</div>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6}>
-                        <h4>Python</h4>
-                        <div className="skill-container">
-                            <div className="skills python">1 Year</div>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+            <Skills skills={skillsData} />
         </Jumbotron>
         <Jumbotron className="anchors cards" id="experience">
             <h1>Experience</h1>
@@ -220,6 +211,7 @@ const HomePage = () => (
                             </div>
                             <p>
                                 Designed and created a website that would showcase my projects and demonstrate my ability in the front-end.
+                                <i>(hint, you're looking at it!)</i>
                             </p>
                         </div>
                     </Col>
@@ -232,19 +224,25 @@ const HomePage = () => (
             <Form action="https://formspree.io/steven.zelin.li@gmail.com" method="POST">
                 <Container>
                     <Row>
-                        <Col xs={12} md={8}>
-                            <Form.Group controlId="formBasicName">
+                        <Col xs={12} md={6}>
+                            <Form.Group controlId="formName">
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type="text" placeholder="Name" name="name" />
                             </Form.Group>
                         </Col>
-                        <Col xs={12} md={8}>
-                            <Form.Group controlId="formBasicEmail">
+                        <Col xs={12} md={6}>
+                            <Form.Group controlId="formEmail">
                                 <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" name="_replyto" />
+                                <Form.Control type="email" placeholder="Enter email" name="email" />
                                 <Form.Text className="text-muted">
                                     I will never share your email with anyone else.
                                 </Form.Text>
+                            </Form.Group>
+                        </Col>
+                        <Col xs={12} md={12} lg={8}>
+                            <Form.Group controlId="formContent">
+                                <Form.Label>Content</Form.Label>
+                                <Form.Control type="text" placeholder="What can I do for you?" name="content" />
                             </Form.Group>
                         </Col>
                     </Row>
