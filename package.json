@@ -38,7 +38,7 @@
     "eject": "react-scripts eject",
     "test:coverage": "react-scripts test --watchAll=false --coverage",
     "predeploy": "react-scripts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
