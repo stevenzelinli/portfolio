@@ -71,7 +71,7 @@
     "flush-promises": "^1.0.2",
     "gh-pages": "^2.1.1",
     "react-test-renderer": "^16.8.6",
-    "stylelint": "^10.1.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-scss": "^3.8.0"
   }
